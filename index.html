@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f8f84bc98c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main flex-col">
+      <i class="fa-solid fa-book-open fa-10x"></i>
+      <h1>Track Books</h1>
+      <h2>What Books Have You Read This Month?</h2>
+      <form class="flex-col" action="javascript:void(0);">
+        <div>
+          <p class="feedback" id="feedback"></p>
+          <input
+            id="txtInput"
+            type="text"
+            class="input"
+            placeholder="add your book here..."
+          />
+        </div>
+        <button class="btn" id="btnAdd" type="submit">Add To List</button>
+      </form>
+    </main>
+
+    <ul id="outputList" class="output-list"></ul>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+  <footer class="footer link-list">
+    <a href="http://intagram.com" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-instagram fa-2x"></i>
+    </a>
+    <a href="http://facbeook.com" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-facebook fa-2x"></i>
+    </a>
+    <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-google fa-2x"></i>
+    </a>
+  </footer>
+</html>
